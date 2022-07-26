@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E406ACE288FE6FE00D40A10 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E406ACD288FE6FE00D40A10 /* DataProvider.swift */; };
 		9E5A347D288D97490068B097 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5A347C288D97490068B097 /* CustomTableViewCell.swift */; };
 		9E5E6659288DC76B00879E72 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E6658288DC76B00879E72 /* DetailViewController.swift */; };
 		9E604157288C3E4400CC1FD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E604156288C3E4400CC1FD6 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E406ACD288FE6FE00D40A10 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		9E5A347C288D97490068B097 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9E5E6658288DC76B00879E72 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9E604153288C3E4300CC1FD6 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 				9E604156288C3E4400CC1FD6 /* AppDelegate.swift */,
 				9E604158288C3E4400CC1FD6 /* SceneDelegate.swift */,
 				9E60415A288C3E4400CC1FD6 /* ViewController.swift */,
+				9E406ACD288FE6FE00D40A10 /* DataProvider.swift */,
 				9E5A347C288D97490068B097 /* CustomTableViewCell.swift */,
 				9E5E6658288DC76B00879E72 /* DetailViewController.swift */,
 				9E60415C288C3E4400CC1FD6 /* Main.storyboard */,
@@ -150,6 +153,7 @@
 				9E60415B288C3E4400CC1FD6 /* ViewController.swift in Sources */,
 				9E5A347D288D97490068B097 /* CustomTableViewCell.swift in Sources */,
 				9E604157288C3E4400CC1FD6 /* AppDelegate.swift in Sources */,
+				9E406ACE288FE6FE00D40A10 /* DataProvider.swift in Sources */,
 				9E5E6659288DC76B00879E72 /* DetailViewController.swift in Sources */,
 				9E604159288C3E4400CC1FD6 /* SceneDelegate.swift in Sources */,
 				9E60416D288C3E7200CC1FD6 /* Characters.swift in Sources */,

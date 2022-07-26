@@ -8,11 +8,15 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
+    
+  
+    
     @IBOutlet var nameLabel: UILabel!
     
     @IBOutlet var characterImg: UIImageView!
     @IBOutlet var nickName: UILabel!
 
+    @IBOutlet var favButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,7 +33,11 @@ class CustomTableViewCell: UITableViewCell {
         nameLabel.text = character.name
         nickName.text = character.species
         characterImg.downloaded(from: character.image)
+        
+       
     }
+    
+    
 
 }
 
