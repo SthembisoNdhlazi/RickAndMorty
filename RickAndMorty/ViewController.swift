@@ -23,17 +23,17 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         
-        let urlString = "https://rickandmortyapi.com/api/character"
-        if let url = URL(string: urlString){
-            if let data = try? Data(contentsOf: url){
-                dataProvider.parse(json: data)
-                
-              
+        dataProvider.fetchData { result in
+            switch result {
+            case .success(let characters):
+                self.dataProvider.characters = characters.results
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
             }
+            
         }
-        
         tableView.reloadData()
         tableView.delegate = self
         tableView.dataSource = self
@@ -60,14 +60,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? DetailViewController{
+        if let destination = segue.destination as? DetailViewController {
             destination.character = dataProvider.characters![tableView.indexPathForSelectedRow!.row]
-            
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "details", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
 }
